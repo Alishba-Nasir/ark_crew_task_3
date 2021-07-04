@@ -1,0 +1,149 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav{
+    background-color: wheat;
+    
+}
+
+.nav-tabs a{
+    color:floralwhite;
+    
+}
+
+.nav-tabs a:hover{
+    text-decoration: none;
+    color:peru;
+}
+
+.logo a:hover{
+    text-decoration: none;
+    color:floralwhite
+
+}
+.logo a{
+    color:floralwhite;
+font-weight: bold;}
+
+#head-service{
+    text-align: center;
+    color:saddlebrown;
+    
+    padding-top: 20px;
+}
+
+#service{
+    color:saddlebrown;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+
+
+
+.zoom {
+    transition: transform .2s; /* Animation */
+    border-style:solid;
+    border-radius: 3px;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+cursor: pointer; 
+}
+
+  .text{
+      
+      font-size: 15px;
+      color:saddlebrown;
+      text-align: center;
+  }
+
+  #head-story{
+    text-align: center;
+    color:saddlebrown;
+    
+    padding-top: 20px;
+
+}
+  #text2{
+      background-color: rgb(75, 42, 13);
+      color: floralwhite;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-style: groove;
+      border-color: khaki;
+      padding-left: 5px;
+      padding-right: 5px;
+
+  }
+
+  #contact{
+      border-style: solid;
+      border-color:saddlebrown;
+  
+
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: saddlebrown;
+  }
+  .center:hover{
+      cursor: pointer;
+  }
+
+  #sub{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  #con{
+    text-align: center;
+    color:saddlebrown;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+
+
+  label{
+      color:saddlebrown;
+  }
+
+
+
+  #footer{
+    background-color: saddlebrown;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 30px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: brown;
+   
+}
+
+#icon{
+    padding-top:20px;
+    
+}
+
+a.icon:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color:grey;
+
+}
+a.icon{
+    color:floralwhite;
+}
