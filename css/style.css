@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: auto;
+    
     overflow: scroll;
     overflow-x: hidden;
   }
@@ -14,9 +14,21 @@ html {
 }
 
 *{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'STIX Two Math', serif;
 }
 
+.carousel .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+  }
+  
 /*nav{
     background-color: wheat;
     
@@ -49,7 +61,13 @@ font-weight: bold;}
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+
       
+}
+
+.nav-item{
+    padding-left:15px;
+    padding-right:15px;
 }
 
 .nav-link{
@@ -91,17 +109,6 @@ font-weight: bold;}
 
 
 
-
-.zoom {
-    transition: transform .2s; /* Animation */
-    
-  }
-  
-  .zoom:hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-cursor: pointer; 
-}
-
   .text{
       
       font-size: 15px;
@@ -139,6 +146,7 @@ cursor: pointer;
 
   }
   .center {
+    margin-bottom: 0%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -160,7 +168,7 @@ cursor: pointer;
     text-align: center;
     color:saddlebrown;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 50px;
   }
 
 
@@ -203,7 +211,7 @@ a.icon{
 
 
 .footer {
-  position: fixed;
+
   
   left: 0;
   bottom: 0;
