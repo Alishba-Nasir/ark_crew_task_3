@@ -4,7 +4,7 @@ html {
     overflow-x: hidden;
   }
 
-  ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
@@ -13,21 +13,15 @@ html {
     background: #FF0000;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 *{
     font-family: 'STIX Two Math', serif;
 }
 
-.carousel .carousel-item {
-    height: 500px;
-  }
-  
-  .carousel-item img {
-      position: absolute;
-      object-fit:cover;
-      top: 0;
-      left: 0;
-      min-height: 500px;
-  }
+
   
 /*nav{
     background-color: wheat;
@@ -106,6 +100,19 @@ font-weight: bold;}
     font-weight: bold;
     
 }
+.box {
+    transition: box-shadow .3s;
+    
+    margin: 40px;
+    border-radius:10px;
+    border: 1px solid rgb(255, 255, 255);
+  
+    float: left;
+    
+  }
+  .box:hover {
+    box-shadow: 0 0 11px rgba(31, 27, 27, 0.2); 
+  }
 
 
 
@@ -127,44 +134,39 @@ font-weight: bold;}
 .story{
     padding-top:10px;
 }
-  #text2{
-      background-color: rgb(75, 42, 13);
-      color: floralwhite;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      border-style: groove;
-      border-color: khaki;
-      padding-left: 5px;
-      padding-right: 5px;
+
+#text2{
+    background-color: rgb(75, 42, 13);
+    color: floralwhite;
+    border-style: groove;
+    border-color: khaki;
+      
 
   }
 
-  #contact{
-      border-style: solid;
-      border-color:saddlebrown;
-  
+#contact{
 
   }
-  .center {
-    margin-bottom: 0%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-style: solid;
+
+.center{
+    width:100%;
+    margin: 20px;
+    border-style: double;
+    border:white;
     border-radius: 5px;
-    border-color: saddlebrown;
-  }
-  .center:hover{
-      cursor: pointer;
+
   }
 
-  #sub{
-      padding-top: 10px;
-      padding-bottom: 10px;
+.center:hover{
+    cursor: pointer;
   }
 
-  #con{
+#sub{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+#con{
     text-align: center;
     color:saddlebrown;
     font-weight: bold;
@@ -172,8 +174,8 @@ font-weight: bold;}
   }
 
 
-  label{
-      color:saddlebrown;
+label{
+    color:saddlebrown;
   }
 
 

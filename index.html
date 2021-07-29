@@ -62,7 +62,7 @@
           <a class="nav-link" href="#services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#story_jump">Our Story</a>
+          <a class="nav-link" href="#story">Our Story</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact Us</a>
@@ -111,38 +111,43 @@
     </div>
     <div class="row">
       <div class="col-sm" id="service">
+        <br>
         <h4><u>Hair Care</u></h4>
         <br>
-        <div class="shadow p-3 mb-5 bg-white rounded">
-          <img src="img/shampoo.jpg" alt="Shampoo" width="80%" height="80%">
-        </div>
+          <img src="img/shampoo.jpg" class="box" alt="Shampoo" width="80%" height="60%">
+        
         <br>
         <p class="text">We use best quality hair products for our customer's satisfaction.</p>
         <br>
       </div>
       <div class="col-sm" id="service">
+        <br>
         <h4><u>Cutting & Styling</u></h4>
         <br>
-        <div class="shadow p-3 mb-5 bg-white rounded">
-          <img src="img/cut.jpg" alt="Cutting" width="80%" height="80%">
-        </div>
+        
+          <img src="img/cut.jpg" class="box" alt="Cutting" width="80%" height="70%">
+        
         <br>
         <p class="text">Skilled Hairdressers, making you more confident with your looks.</p>
         <br>
       </div>
       <div class="col-sm" id="service">
+        <br>
         <h4><u>Massage</u></h4>
         <br>
-        <div class="shadow p-3 mb-5 bg-white rounded">
-          <img src="img/massage.jpg" alt="Massage" width="80%" height="80%">
-        </div>
+        
+          <img src="img/massage.jpg" class="box" alt="massage" width="80%" height="70%">
+        
         <br>
         <p class="text">Our well-trained Massuer, giving you sense of relaxation and relief.</p>
         <br>
+        
       </div>
 
     </div>
   </div>
+
+  
   
   <!--<div class="container-fluid story" id="story_jump" style="height: 100vh;">
     <div class="row">
@@ -174,8 +179,8 @@
 
   </div>-->
 
-  <!--OUR STORY-->
-  <div class="container-fluid" id="story_jump" style="height: 100vh;">
+  <!--OUR STORY
+  <div class="container-fluid" id="story" style="height: 100vh;">
     <div class="row">
         <br>
         <div class="col-12" id="head-story" >
@@ -184,19 +189,43 @@
 
     </div>
     <div class="row">
-        <div class="col-12">
-            <img src="img/barber.jpg" alt="barber" class="center">
+        <div class="col-6">
+            <img src="img/barber.jpg" class="box" alt="barber" class="center">
         </div>
-        </div>
-        <div class="row">
-        <div class="col-12" style="padding-left:100px; padding-right: 100px; padding-top: 50px;" >
-            <p class="text" id="text2">
+        
+        
+        <div class="col-6">
+            <p class="text" id="text2" style="margin-top:130px; padding-top: 80px; padding-bottom:80px; padding-left:30px; padding-right:30px; border-radius:5px;">
                 Started as a one man-shop, now have a team of 15 highly skilled professional hairdressers and massuers. We make sure to provide best quality services to our clients, making them feel relaxed and contented, relieving the stress by our very well-known "Head-Massage" and providing grace and more confidence to their personalities.
             </p>
         </div>
+        
     </div>
-    
-</div>
+    </div>-->
+
+  <div class="container-fluid" id="story" style="height: 100vh; background-color:burlywood;">
+      <div class="row">
+          <br>
+          <div class="col-12" id="head-story" >
+              <h2 style="padding-top: 20px; padding-bottom:20px;"><b>OUR STORY</b></h2>
+          </div>
+  
+      </div>
+      <div class="row">
+          <div class="col-md-5 col-sm-6 ">
+              <img src="img/barber.jpg" alt="barber" class="box img-fluid center" style="vertical-align: middle; width:90%" >
+          </div>
+     
+          <div class="col-md-7 col-sm-6" >
+              <p class="text" id="text2" style=" padding: 40px; margin-top: 60px;" >
+                  Started as a one man-shop, now have a team of 15 highly skilled professional hairdressers and massuers. We make sure to provide best quality services to our clients, making them feel relaxed and contented, relieving the stress by our very well-known "Head-Massage" and providing grace and more confidence to their personalities.
+              </p>
+          </div>
+      </div>
+      </div>
+  </div>
+  
+
   <!--CONTACT US-->
   <div class="container-fluid" id="contact" style="height: 100vh;">
     <div class="row">
@@ -238,35 +267,85 @@
       </form>
     </div>
   </div>
-  </div>
+
 
 
 
 
   <!--FOOTER-->
-  <div class="container-fluid footer" style="height:80px; padding-top:10px; background-color:saddlebrown !important;">
+  <div class="container-fluid footer" style="height:400px; padding-top:10px; background-color:saddlebrown ! Important">
     <div class="row">
-      <div class="col-4">
-        <a href="#" class="icon"><i class="fa fa-facebook-official " aria-hidden="true"
-            style="font-size: 30px; color:floralwhite;">
+      <div class="col-5">
+        
+        <h4 style="text-align:center;">Feedback</h4>
+      
+    <form>
+
+      <div class="form-row">
+        <div class="col">
+          <label for="firstname">First Name:</label>
+          <input type="text" class="form-control" id="firstname" placeholder="First name">
+        </div>
+        <div class="col">
+          <label for="lastname">Last Name</label>
+          <input type="text" class="form-control" id="lastname" placeholder="Last name">
+        </div>
+      </div>
+      <br>
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+      </div>
+      <br>
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="inputMSG">Your Feedback</label>
+          <input type="text" class="form-control" id="inputMSG" placeholder="Your Feedback">
+        </div>
+      </div>
+      <br>
+
+
+    </form>
+    
+  </div>
+  <div class="col-4">
+    <h4 style="text-align:center;">Location</h4>
+    <br>
+    <p> 247 Ivy St. Delray Beach, FL <br>  Zip:	33445 <br> Phone:	414-241-4343 <br> Mobile: 708-463-6067 <br> Email: info@hairbar.com  </p>
+
+  </div>
+      <div class="col-3">
+        <li style="text-align:center; list-style-type:none;"><a href="#" class="icon"><i class="fa fa-facebook-official " aria-hidden="true"
+            style="font-size: 30px; color:floralwhite;"><p style="font-size:15px;">Facebook</p>
 
           </i>
-          <p>Facebook Page
-        </a></p>
+          
+        </a></li>
+        <br>
+        <br>
+        <br>
+        <li style="text-align:center; list-style-type:none;"><a href="#" class="icon"><i class="fa fa-whatsapp" aria-hidden="true"
+          style="font-size: 30px; color:floralwhite;"><p style="font-size:15px;">Whatsapp </p>
+        </i>
+       
+      </a></li>
+      <br>
+      <br>
+      <br>
+        <li style="text-align:center; list-style-type:none;"><a href="#" class="icon"><i class="fa fa-instagram" aria-hidden="true"
+          style="font-size: 30px; color:floralwhite;"><p style="font-size:15px;">Instagram</p>
+        </i>
+       
+      </a></li>
       </div>
-      <div class="col-4">
-        <a href="#" class="icon"><i class="fa fa-whatsapp" aria-hidden="true"
-            style="font-size: 30px; color:floralwhite;"></i>
-          <p>Whatsapp Page
-        </a></p>
-      </div>
-      <div class="col-4">
-        <a href="#" class="icon"><i class="fa fa-instagram" aria-hidden="true"
-            style="font-size: 30px; color:floralwhite;"></i>
-          <p>Instagram Page
-        </a></p>
+      
+      
+     
 
-      </div>
+
     </div>
   </div>
 
