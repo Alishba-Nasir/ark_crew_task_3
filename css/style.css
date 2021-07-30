@@ -191,23 +191,17 @@ label{
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: brown;
+    color: floralwhite;
    
 }
 
-.icon{
-    padding-top:20px;
-    
-}
 
 a.icon:hover{
     cursor: pointer;
     text-decoration: none;
-    color:grey;
+    color: burlywood;
+    
 
-}
-a.icon{
-    color:floralwhite;
 }
 
 
@@ -221,4 +215,13 @@ a.icon{
   background-color:saddlebrown;
   color: floralwhite;
   text-align: center;
+}
+
+
+.textarea {
+    overflow: auto;
+    resize: vertical;
+}
+.textarea.form-control {
+    height: auto;
 }
