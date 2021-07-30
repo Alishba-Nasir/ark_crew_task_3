@@ -206,6 +206,11 @@ a.icon:hover{
 
 
 
+.ft_logo a:hover{
+    cursor:pointer;
+    color:burlywood;
+}
+
 .footer {
 
   
