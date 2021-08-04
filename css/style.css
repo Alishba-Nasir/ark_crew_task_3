@@ -1,28 +1,25 @@
 html {
-    
     overflow: scroll;
     overflow-x: hidden;
-  }
+}
 
 ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-    background: #FF0000;
+    background: #ff0000;
 }
 
 html {
     scroll-behavior: smooth;
-  }
-
-*{
-    font-family: 'STIX Two Math', serif;
 }
 
+* {
+    font-family: "STIX Two Math", serif;
+}
 
-  
 /*nav{
     background-color: wheat;
     
@@ -48,139 +45,121 @@ html {
 font-weight: bold;}
 */
 
-.navbar{
-
+.navbar {
     background-color: saddlebrown;
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-
-      
 }
 
-.nav-item{
-    padding-left:15px;
-    padding-right:15px;
+.nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.nav-link{
-    color:floralwhite;
-}
-
-.nav-link:hover{
-    text-decoration:none;
-    color:peru;
-}
-
-.navbar-brand{
+.nav-link {
     color: floralwhite;
-
 }
-.navbar-brand:hover{
-    text-decoration:none;
-    color:floralwhite;
-    
+
+.nav-link:hover {
+    text-decoration: none;
+    color: peru;
+}
+
+.navbar-brand {
+    color: floralwhite;
+}
+.navbar-brand:hover {
+    text-decoration: none;
+    color: floralwhite;
 }
 
 /*.carousel-item{
     height: 90vh;
 }*/
 
-#head-service{
+#head-service {
     text-align: center;
-    color:saddlebrown;
-    
+    color: saddlebrown;
+
     padding-top: 20px;
 }
 
-#service{
-    color:saddlebrown;
+#service {
+    color: saddlebrown;
     text-align: center;
     font-weight: bold;
-    
 }
 .box {
-    transition: box-shadow .3s;
-    
+    transition: box-shadow 0.3s;
+
     margin: 40px;
-    border-radius:10px;
+    border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
-  
+
     float: left;
-    
-  }
-  .box:hover {
-    box-shadow: 0 0 11px rgba(31, 27, 27, 0.2); 
-  }
+}
+.box:hover {
+    box-shadow: 0 0 11px rgba(31, 27, 27, 0.2);
+}
 
-
-
-  .text{
-      
-      font-size: 15px;
-      color:saddlebrown;
-      text-align: center;
-  }
-
-  #head-story{
+.text {
+    font-size: 15px;
+    color: saddlebrown;
     text-align: center;
-    color:saddlebrown;
-    
+}
+
+#head-story {
+    text-align: center;
+    color: saddlebrown;
+
     padding-top: 5px;
-
 }
 
-.story{
-    padding-top:10px;
+.story {
+    padding-top: 10px;
 }
 
-#text2{
+#text2 {
     background-color: rgb(75, 42, 13);
     color: floralwhite;
     border-style: groove;
     border-color: khaki;
-      
+}
 
-  }
+#contact {
+}
 
-#contact{
-
-  }
-
-.center{
-    width:100%;
+.center {
+    width: 100%;
     margin: 20px;
     border-style: double;
-    border:white;
+    border: white;
     border-radius: 5px;
+}
 
-  }
-
-.center:hover{
+.center:hover {
     cursor: pointer;
-  }
+}
 
-#sub{
+#sub {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+}
 
-#con{
+#con {
     text-align: center;
-    color:saddlebrown;
+    color: saddlebrown;
     font-weight: bold;
     padding-top: 50px;
-  }
+}
 
+label {
+    color: saddlebrown;
+}
 
-label{
-    color:saddlebrown;
-  }
-
-
-
-  #footer{
+#footer {
     background-color: saddlebrown;
 }
 
@@ -192,36 +171,27 @@ label{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: floralwhite;
-   
 }
 
-
-a.icon:hover{
+a.icon:hover {
     cursor: pointer;
     text-decoration: none;
     color: burlywood;
-    
-
 }
 
-
-
-.ft_logo a:hover{
-    cursor:pointer;
-    color:burlywood;
+.ft_logo a:hover {
+    cursor: pointer;
+    color: burlywood;
 }
 
 .footer {
-
-  
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:saddlebrown;
-  color: floralwhite;
-  text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: saddlebrown;
+    color: floralwhite;
+    text-align: center;
 }
-
 
 .textarea {
     overflow: auto;
@@ -231,10 +201,13 @@ a.icon:hover{
     height: auto;
 }
 
-h2{
-    color:rgb(129, 58, 7);
+h2 {
+    color: rgb(129, 58, 7);
 }
-h4{
+h4 {
     color: rgb(168, 80, 44);
 }
 
+h5 {
+    color: floralwhite;
+}
