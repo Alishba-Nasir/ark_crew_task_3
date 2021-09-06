@@ -1,384 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>HAIRBAR</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.PNG" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+            integrity="sha512-	5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+            crossorigin="anonymous"
+        />
+    </head>
 
-<head>
-  <title>HAIRBAR</title>
-  <link rel="shortcut icon" type="image/png" href="img/favicon.PNG">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    integrity="sha512-	5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-    crossorigin="anonymous" />
-</head>
+    <body>
+        <!--HEADER-->
+        <!--navbar-->
+        <!--<nav class="navbar">
+            <h1 class="logo">
+                <a href="#">
+                    <i class="fa fa-superpowers" aria-hidden="true" style="color:floralwhite"></i>
+                    HAIRBAR
+                </a>
+            </h1>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Contact Us</a>
+                </li>
+            </ul>
+        </nav>-->
 
-<body>
-  <!--HEADER-->
-  <!--navbar-->
-  <!--<nav class="navbar">
-          <h1 class="logo"><a href="#">
-            <i class="fa fa-superpowers" aria-hidden="true" style="color:floralwhite"></i>
-              HAIRBAR
-          </a></h1>
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Our Story</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Contact Us</a>
-        </li>
-      </ul>
-    </nav>-->
-
-  <!--NAV BAR REVISED-->
-  <nav class="navbar navbar-expand-md ">
-    <h1><a class="navbar-brand" href="#"><b><i class="fa fa-superpowers" aria-hidden="true"
-            style="color:floralwhite"></i>
-          HAIRBAR</b></a></h1>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
-      style="border-color: floralwhite; ">
-      <i class="fa fa-bars" aria-hidden="true" style="color:floralwhite"></i>
-
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav" style="margin-left: auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#story">Our Story</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!--BODY-->
-  <!--SLIDER-->
-  <div id="carouselExampleControls home" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" style="height: 100vh !important;">
-        <img class="d-block w-100 " src="img/img1.jpg" alt="First slide" style="position: absolute;
-                    top: 0;
-                    left: 0;
-                    min-height: 300px;">
-      </div>
-      <div class="carousel-item" style="height: 100vh;">
-        <img class="d-block w-100 " src="img/img2.jpg" alt="Second slide" style="position: absolute;
-                    top: 0;
-                    left: 0;
-                    min-height: 300px;">
-      </div>
-      <div class="carousel-item" style="height: 100vh;">
-        <img class="d-block w-100 " src="img/img3.jpg" alt="Third slide" style="position: absolute;
-                    top: 0;
-                    left: 0;
-                    min-height: 300px;">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  <!--SERVICES-->
-  <div class="container-fluid" id="services" style="height: 100vh; overflow-y:scroll;">
-    <div class="row">
-      <div class="col-12" id="head-service">
-        <h2><b>SERVICES</b></h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm" id="service">
-        <br>
-        <h4><u>Hair Care</u></h4>
-        <br>
-        <img src="img/shampoo.jpg" class="box" alt="Shampoo" width="80%" height="60%">
-
-        <br>
-        <p class="text">We use best quality hair products for our customer's satisfaction.</p>
-        <br>
-      </div>
-      <div class="col-sm" id="service">
-        <br>
-        <h4><u>Cutting & Styling</u></h4>
-        <br>
-
-        <img src="img/cut.jpg" class="box" alt="Cutting" width="80%" height="60%">
-
-        <br>
-        <p class="text">Skilled Hairdressers, making you more confident with your looks.</p>
-        <br>
-      </div>
-      <div class="col-sm" id="service">
-        <br>
-        <h4><u>Massage</u></h4>
-        <br>
-
-        <img src="img/massage.jpg" class="box" alt="massage" width="80%" height="60%">
-
-        <br>
-        <p class="text">Our well-trained Massuer, giving you sense of relaxation and relief.</p>
-        <br>
-
-      </div>
-
-    </div>
-  </div>
-
-
-
-  <!--<div class="container-fluid story" id="story_jump" style="height: 100vh;">
-    <div class="row">
-      <div class="col-12">
-        <h2 style="padding-top: 20px; color: saddlebrown ; text-align: center;"><b>OUR STORY</b></h2>
-      </div>
-    </div>
-    <div class="row">
-      <br>
-      <div class="col" id="head-story" style="overflow: hidden;">
-        <img src="img/barber.jpg" alt="barber" class="center">
-
-      </div>
-
-
-      <div class="col">
-
-
-        <br>
-
-        <p class="text" id="text2" style="padding-top: 80px; padding-bottom: 80px;">
-          Started as a one man-shop, now have a team of 15 highly skilled professional hairdressers and massuers. We
-          make sure to provide best quality services to our clients, making them feel relaxed and contented, relieving
-          the stress by our very well-known "Head-Massage" and providing grace and more confidence to their
-          personalities.
-        </p>
-      </div>
-    </div>
-
-  </div>-->
-
-  <!--OUR STORY
-  <div class="container-fluid" id="story" style="height: 100vh;">
-    <div class="row">
-        <br>
-        <div class="col-12" id="head-story" >
-            <h2 style="padding-top: 20px; padding-bottom:20px;"><b>OUR STORY</b></h2>
+        <!--NAV BAR REVISED-->
+        <nav class="navbar navbar-expand-md">
+            <h1>
+                <a class="navbar-brand" href="#">
+                    <b>
+                        <i class="fa fa-superpowers" aria-hidden="true"></i>
+                        HAIRBAR
+                    </b>
+                </a>
+            </h1>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsibleNavbar"
+                style="border-color: floralwhite"
+            >
+                <i
+                    class="fa fa-bars"
+                    aria-hidden="true"
+                    style="color: floralwhite"
+                ></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="margin-left: auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#story">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--BODY-->
+        <!--SLIDER-->
+        <div
+            id="carouselExampleControls home"
+            class="carousel slide"
+            data-ride="carousel"
+        >
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        class="d-block w-100"
+                        src="img/img1.jpg"
+                        alt="First slide"
+                        style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            min-height: 300px;
+                        "
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="d-block w-100"
+                        src="img/img2.jpg"
+                        alt="Second slide"
+                        style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            min-height: 300px;
+                        "
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="d-block w-100"
+                        src="img/img3.jpg"
+                        alt="Third slide"
+                        style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            min-height: 300px;
+                        "
+                    />
+                </div>
+            </div>
+            <a
+                class="carousel-control-prev"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a
+                class="carousel-control-next"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--SERVICES-->
+        <div class="container-fluid" id="services">
+            <div class="row">
+                <div class="col-12" id="head-service">
+                    <h2><b>SERVICES</b></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm" id="service">
+                    <br />
+                    <h4><u>Hair Care</u></h4>
+                    <br />
+                    <img
+                        src="img/shampoo.jpg"
+                        class="box"
+                        alt="Shampoo"
+                        width="80%"
+                        height="60%"
+                    />
+                    <br />
+                    <p class="text">
+                        We use best quality hair products for our customer's
+                        satisfaction.
+                    </p>
+                    <br />
+                </div>
+                <div class="col-sm" id="service">
+                    <br />
+                    <h4><u>Cutting & Styling</u></h4>
+                    <br />
+                    <img
+                        src="img/cut.jpg"
+                        class="box"
+                        alt="Cutting"
+                        width="80%"
+                        height="60%"
+                    />
+                    <br />
+                    <p class="text">
+                        Skilled Hairdressers, making you more confident with
+                        your looks.
+                    </p>
+                    <br />
+                </div>
+                <div class="col-sm" id="service">
+                    <br />
+                    <h4><u>Massage</u></h4>
+                    <br />
+                    <img
+                        src="img/massage.jpg"
+                        class="box"
+                        alt="massage"
+                        width="80%"
+                        height="60%"
+                    />
+                    <br />
+                    <p class="text">
+                        Our well-trained Massuer, giving you sense of relaxation
+                        and relief.
+                    </p>
+                    <br />
+                </div>
+            </div>
         </div>
 
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <img src="img/barber.jpg" class="box" alt="barber" class="center">
+        <!--<div class="container-fluid story" id="story_jump" style="height: 100vh;">
+            <div class="row">
+                <div class="col-12">
+                    <h2 style="padding-top: 20px; color: saddlebrown ; text-align: center;"><b>OUR STORY</b></h2>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+                <div class="col" id="head-story" style="overflow: hidden;">
+                    <img src="img/barber.jpg" alt="barber" class="center">
+                </div>
+                <div class="col">
+                    <br>
+                    <p class="text" id="text2" style="padding-top: 80px; padding-bottom: 80px;">
+                        Started as a one man-shop, now have a team of 15 highly skilled professional hairdressers and massuers. We
+                        make sure to provide best quality services to our clients, making them feel relaxed and contented, relieving
+                        the stress by our very well-known "Head-Massage" and providing grace and more confidence to their
+                        personalities.
+                    </p>
+                </div>
+            </div>
+
+        </div>-->
+
+        <!--OUR STORY
+        <div class="container-fluid" id="story" style="height: 100vh;">
+            <div class="row">
+                <br>
+                <div class="col-12" id="head-story" >
+                    <h2 style="padding-top: 20px; padding-bottom:20px;"><b>OUR STORY</b></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <img src="img/barber.jpg" class="box" alt="barber" class="center">
+                </div>
+                <div class="col-6">
+                    <p class="text" id="text2" style="margin-top:130px; padding-top: 80px; padding-bottom:80px; padding-left:30px; padding-right:30px; border-radius:5px;">
+                        Started as a one man-shop, now have a team of 15 highly skilled professional hairdressers and massuers. We make sure to provide best quality services to our clients, making them feel relaxed and contented, relieving the stress by our very well-known "Head-Massage" and providing grace and more confidence to their personalities.
+                    </p>
+                </div>
+        
+            </div>
+        </div>-->
+
+        <div class="container-fluid" id="story">
+            <div class="row">
+                <br />
+                <div class="col-12" id="head-story">
+                    <h2 class="story-heading">
+                        <b>OUR STORY</b>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-sm-6">
+                    <img
+                        src="img/barber.jpg"
+                        alt="barber"
+                        class="box img-fluid center"
+                    />
+                </div>
+                <div class="col-md-7 col-sm-6">
+                    <p class="text" id="text2">
+                        Started as a one man-shop, now have a team of 15 highly
+                        skilled professional hairdressers and massuers. We make
+                        sure to provide best quality services to our clients,
+                        making them feel relaxed and contented, relieving the
+                        stress by our very well-known "Head-Massage" and
+                        providing grace and more confidence to their
+                        personalities.
+                    </p>
+                </div>
+            </div>
         </div>
-        
-        
-        <div class="col-6">
-            <p class="text" id="text2" style="margin-top:130px; padding-top: 80px; padding-bottom:80px; padding-left:30px; padding-right:30px; border-radius:5px;">
-                Started as a one man-shop, now have a team of 15 highly skilled professional hairdressers and massuers. We make sure to provide best quality services to our clients, making them feel relaxed and contented, relieving the stress by our very well-known "Head-Massage" and providing grace and more confidence to their personalities.
+
+        <!--CONTACT US-->
+        <div class="container-fluid" id="contact">
+            <div class="row">
+                <div class="col-12" id="con">
+                    <h2>
+                        <b> CONTACT US </b>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="sub">
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="firstname">First Name:</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="firstname"
+                                    placeholder="First name"
+                                />
+                            </div>
+                            <div class="col">
+                                <label for="lastname">Last Name</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="lastname"
+                                    placeholder="Last name"
+                                />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label for="inputEmail4">Email</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="inputEmail4"
+                                    placeholder="Email"
+                                />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="phone">Phone no. :</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="phone"
+                                    placeholder="Phone no."
+                                />
+                            </div>
+                        </div>
+                        <br />
+                        <button type="submit" class="btn btn-secondary con-btn">
+                            Book Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-4">
+                    <h5>Location</h5>
+                    <br />
+                    <p>
+                        247 Ivy St. Delray Beach, FL <br />
+                        Zip: 33445 <br />
+                        Phone: 414-241-4343 <br />
+                        Mobile: 708-463-6067 <br />
+                        Email: info@hairbar.com
+                    </p>
+                    <br />
+                    <h5>Opening Hours</h5>
+                    <p>From 9am to 7pm, Monday to Friday.</p>
+                </div>
+                <div class="col-4">
+                    <h5>Your Feedback for us</h5>
+
+                    <form class="fd-form">
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label for="fullname">fullname Name:</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="firstname"
+                                    placeholder="First name"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label for="inputEmail4">Email</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="inputEmail4"
+                                    placeholder="Email"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label for="phone">Email</label>
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="phone"
+                                    placeholder="Phone"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label for="inputMSG">Your Feedback</label>
+                                <input
+                                    type="text"
+                                    class="form-control textarea"
+                                    id="inputMSG"
+                                    placeholder="Your Feedback"
+                                />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="text-left">
+                            <button
+                                type="submit"
+                                class="btn btn-secondary fd-btn"
+                            >
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-4">
+                    <h5>Find Us</h5>
+                    <br />
+                    <a href="#">
+                        <i
+                            class="fa fa-superpowers"
+                            aria-hidden="true"
+                            icon="find"
+                        ></i>
+                    </a>
+
+                    <br />
+                    <br />
+                    <p>
+                        Check out our social media handles and follow us for
+                        more intersting trends and updates.
+                    </p>
+                    <br />
+
+                    <a href="#" class="icon">
+                        <i
+                            class="fa fa-facebook-official"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fa fa-whatsapp" aria-hidden="true"> </i>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fa fa-instagram" aria-hidden="true"> </i>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fa fa-twitter" aria-hidden="true"> </i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa fa-linkedin" aria-hidden="true"> </i>
+                    </a>
+                </div>
+            </div>
+            <hr />
+            <p>
+                <b>
+                    Copyright &copy
+                    <a href="#" class="copy"> hairbar.com.pk </a>
+                </b>
             </p>
         </div>
-        
-    </div>
-    </div>-->
-
-  <div class="container-fluid" id="story" style="height: 100vh; background-color:burlywood;">
-    <div class="row">
-      <br>
-      <div class="col-12" id="head-story">
-        <h2 style="padding-top: 20px; padding-bottom:20px;"><b>OUR STORY</b></h2>
-      </div>
-
-    </div>
-    <div class="row">
-      <div class="col-md-5 col-sm-6 ">
-        <img src="img/barber.jpg" alt="barber" class="box img-fluid center" style="vertical-align: middle; width:90%">
-      </div>
-
-      <div class="col-md-7 col-sm-6">
-        <p class="text" id="text2" style=" padding: 40px; margin-top: 60px;">
-          Started as a one man-shop, now have a team of 15 highly skilled professional hairdressers and massuers. We
-          make sure to provide best quality services to our clients, making them feel relaxed and contented, relieving
-          the stress by our very well-known "Head-Massage" and providing grace and more confidence to their
-          personalities.
-        </p>
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-  <!--CONTACT US-->
-  <div class="container-fluid" id="contact" style="height: 100vh;">
-    <div class="row">
-      <div class="col-12" id="con">
-        <h2><b>CONTACT US</b></h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12" id="sub" style="padding-top:100px;">
-        <form>
-          <div class="form-row">
-            <div class="col">
-              <label for="firstname">First Name:</label>
-              <input type="text" class="form-control" id="firstname" placeholder="First name">
-            </div>
-            <div class="col">
-              <label for="lastname">Last Name</label>
-              <input type="text" class="form-control" id="lastname" placeholder="Last name">
-            </div>
-          </div>
-          <br>
-          <div class="form-row">
-            <div class="form-group col">
-              <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-            </div>
-          </div>
-          <br>
-          <div class="form-row">
-            <div class="form-group col-12">
-              <label for="phone">Phone no. :</label>
-              <input type="text" class="form-control" id="phone" placeholder="Phone no.">
-            </div>
-          </div>
-          <br>
-          <button type="submit" class="btn btn-secondary" style="background-color: saddlebrown;">Book Now</button>
-
-      </div>
-      </form>
-    </div>
-  </div>
-
-
-
-
-
-  <!--FOOTER-->
-  <div class="container-fluid footer" style="height:500px; padding-top:20px; background-color:saddlebrown ! Important">
-    <div class="row">
-
-      <div class="col-4">
-
-        <h5 style="text-align:center;">Location</h5>
-        <br>
-        <p> 247 Ivy St. Delray Beach, FL <br> Zip: 33445 <br> Phone: 414-241-4343 <br> Mobile: 708-463-6067 <br> Email:
-          info@hairbar.com </p>
-        <br>
-        <h5>Opening Hours</h5>
-        <p>From 9am to 7pm, Monday to Friday.</p>
-
-
-      </div>
-      <div class="col-3">
-        <h5>Find Us</h5>
-        <br>
-        <a href="#"><i class="fa fa-superpowers" aria-hidden="true" style="color:floralwhite; font-size: 20px;"></i></a>
-
-
-        <br>
-        <p>
-          Check out our social media handles and follow us for more intersting trends and updates.
-        </p>
-        <br>
-
-        <a href="#" class="icon"><i class="fa fa-facebook-official " aria-hidden="true" style="font-size: 20px;">
-
-          </i>
-
-        </a>
-
-        <a href="#" class="icon"><i class="fa fa-whatsapp" aria-hidden="true"
-            style="font-size: 20px; color:floralwhite; padding-left: 15px;">
-          </i>
-
-        </a>
-
-        <a href="#" class="icon"><i class="fa fa-instagram" aria-hidden="true"
-            style="font-size: 20px; color:floralwhite;  padding-left: 15px;">
-          </i>
-
-        </a>
-
-        <a href="#" class="icon"><i class="fa fa-twitter" aria-hidden="true"
-            style="font-size: 20px; color:floralwhite;  padding-left: 15px;">
-          </i>
-
-        </a>
-        <a href="#" class="icon"><i class="fa fa-linkedin" aria-hidden="true"
-            style="font-size: 20px; color:floralwhite;  padding-left: 15px;">
-          </i>
-
-        </a>
-
-      </div>
-      <div class="col-5">
-
-        <h5 style="text-align:center;">Your Feedback for us</h5>
-
-        <form style="line-height:10px;">
-
-          <div class="form-row">
-            <div class="form-group col">
-              <label for="fullname">fullname Name:</label>
-              <input type="text" class="form-control" id="firstname" placeholder="First name">
-            </div>
-
-          </div>
-          <div class="form-row">
-            <div class="form-group col">
-              <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col">
-              <label for="phone">Email</label>
-              <input type="number" class="form-control" id="phone" placeholder="Phone">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col">
-              <label for="inputMSG">Your Feedback</label>
-              <input type="text" class="form-control textarea" id="inputMSG" placeholder="Your Feedback"
-                style="height: 80px;">
-            </div>
-          </div>
-          <br>
-          <div class="text-left">
-            <button type="submit" class="btn btn-secondary"
-              style="background-color: saddlebrown; border: 3px double; border-radius: 6px; ">Submit</button>
-          </div>
-
-        </form>
-
-      </div>
-    </div>
-    <hr style="border-color:floralwhite; width:75%;">
-    <p><b>Copyright &copy <a href="#" class="copy" style="color:grey;">hairbar.com.pk</a></b></p>
-  </div>
-
-</body>
-
+    </body>
 </html>

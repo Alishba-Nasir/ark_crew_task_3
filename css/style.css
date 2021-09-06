@@ -44,6 +44,9 @@ html {
     color:floralwhite;
 font-weight: bold;}
 */
+.fa-superpowers {
+    color: floralwhite;
+}
 
 .navbar {
     background-color: saddlebrown;
@@ -75,9 +78,14 @@ font-weight: bold;}
     color: floralwhite;
 }
 
-/*.carousel-item{
-    height: 90vh;
-}*/
+.carousel-item {
+    height: 100vh;
+}
+
+#services {
+    height: 100vh;
+    overflow-y: scroll;
+}
 
 #head-service {
     text-align: center;
@@ -117,8 +125,15 @@ font-weight: bold;}
     padding-top: 5px;
 }
 
-.story {
-    padding-top: 10px;
+#story {
+    padding-top: 20px;
+    height: 100vh;
+    background-color: burlywood;
+}
+
+.story-heading {
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 #text2 {
@@ -126,17 +141,18 @@ font-weight: bold;}
     color: floralwhite;
     border-style: groove;
     border-color: khaki;
-}
-
-#contact {
+    border-radius: 5px;
+    padding: 50px;
+    margin-top: 30px;
 }
 
 .center {
     width: 100%;
-    margin: 20px;
+    margin: 0px;
     border-style: double;
     border: white;
     border-radius: 5px;
+    vertical-align: middle;
 }
 
 .center:hover {
@@ -144,8 +160,12 @@ font-weight: bold;}
 }
 
 #sub {
-    padding-top: 10px;
     padding-bottom: 10px;
+    padding-top: 100px;
+}
+
+#contact {
+    height: 100vh;
 }
 
 #con {
@@ -155,12 +175,15 @@ font-weight: bold;}
     padding-top: 50px;
 }
 
+.con-btn {
+    background-color: saddlebrown;
+}
+
 label {
     color: saddlebrown;
 }
 
-#footer {
-    background-color: saddlebrown;
+.footer {
 }
 
 .fa {
@@ -171,6 +194,17 @@ label {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: floralwhite;
+}
+
+#icon {
+    color: floralwhite;
+    font-size: 20px;
+}
+
+a.icon {
+    font-size: 20px;
+    color: floralwhite;
+    padding-left: 15px;
 }
 
 a.icon:hover {
@@ -185,8 +219,8 @@ a.icon:hover {
 }
 
 .footer {
-    left: 0;
-    bottom: 0;
+    height: 500px;
+    padding-top: 20px;
     width: 100%;
     background-color: saddlebrown;
     color: floralwhite;
@@ -196,9 +230,14 @@ a.icon:hover {
 .textarea {
     overflow: auto;
     resize: vertical;
+    height: 80px;
 }
 .textarea.form-control {
     height: auto;
+}
+
+.fd-form {
+    line-height: 10px;
 }
 
 h2 {
@@ -210,4 +249,20 @@ h4 {
 
 h5 {
     color: floralwhite;
+    text-align: center;
+}
+
+.fd-btn {
+    background-color: saddlebrown;
+    border: 3px double;
+    border-radius: 6px;
+}
+
+hr {
+    border-color: floralwhite;
+    width: 75%;
+}
+
+.copy {
+    color: grey;
 }
