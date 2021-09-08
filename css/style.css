@@ -16,8 +16,16 @@ html {
     scroll-behavior: smooth;
 }
 
+/*BODY*/
 * {
     font-family: "STIX Two Math", serif;
+}
+
+h2 {
+    color: rgb(129, 58, 7);
+}
+h4 {
+    color: rgb(168, 80, 44);
 }
 
 /*nav{
@@ -44,6 +52,8 @@ html {
     color:floralwhite;
 font-weight: bold;}
 */
+
+/*NAVBAR*/
 .fa-superpowers {
     color: floralwhite;
 }
@@ -81,7 +91,7 @@ font-weight: bold;}
 .carousel-item {
     height: 100vh;
 }
-
+/*SERVICES SECTION*/
 #services {
     height: 100vh;
     overflow-y: scroll;
@@ -117,6 +127,8 @@ font-weight: bold;}
     color: saddlebrown;
     text-align: center;
 }
+
+/*STORY SECTION*/
 
 #head-story {
     text-align: center;
@@ -158,6 +170,7 @@ font-weight: bold;}
 .center:hover {
     cursor: pointer;
 }
+/*CONTACT SECTION*/
 
 #sub {
     padding-bottom: 10px;
@@ -183,7 +196,7 @@ label {
     color: saddlebrown;
 }
 
-.footer {
+/*.footer {
 }
 
 .fa {
@@ -218,6 +231,7 @@ a.icon:hover {
     color: burlywood;
 }
 
+
 .footer {
     height: 500px;
     padding-top: 20px;
@@ -225,7 +239,7 @@ a.icon:hover {
     background-color: saddlebrown;
     color: floralwhite;
     text-align: center;
-}
+} 
 
 .textarea {
     overflow: auto;
@@ -239,14 +253,9 @@ a.icon:hover {
 .fd-form {
     line-height: 10px;
 }
+*/
 
-h2 {
-    color: rgb(129, 58, 7);
-}
-h4 {
-    color: rgb(168, 80, 44);
-}
-
+/*
 h5 {
     color: floralwhite;
     text-align: center;
@@ -265,4 +274,73 @@ hr {
 
 .copy {
     color: grey;
+}
+*/
+/*FOOTER SECTION*/
+.footer {
+    height: 500px;
+    padding-top: 20px;
+}
+
+.footer-wrap {
+    background-color: burlywood;
+    width: 100%;
+}
+
+h5 {
+    color: saddlebrown;
+}
+h5:hover {
+    color: saddlebrown;
+    cursor: pointer;
+}
+
+h3:hover {
+    color: saddlebrown;
+    cursor: pointer;
+}
+.container .fa-superpowers {
+    color: saddlebrown;
+}
+
+.foot-heading a {
+    color: saddlebrown;
+    text-decoration: none;
+}
+.foot-heading a:hover {
+    cursor: pointer;
+    color: saddlebrown;
+    text-decoration: none;
+}
+
+.copy-text a {
+    color: grey;
+}
+
+.copy-text a:hover {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.icon-list {
+    list-style: none;
+}
+
+.icon-list a {
+    text-decoration: none;
+    color: saddlebrown;
+    font-size: 30px;
+    text-align: right;
+}
+
+.icon-list a:hover {
+    text-decoration: none;
+    color: saddlebrown;
+    cursor: pointer;
+}
+
+hr {
+    border-color: saddlebrown;
+    width: 70%;
 }
